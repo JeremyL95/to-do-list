@@ -6,15 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do</title>
-    <link rel="stylesheet" href="main.css">
+
+    <link rel="icon" href="/ico/notepad.ico">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
 
+    <div class="container">
+        <h2><i class="far fa-home"></i> Tasks</h2>
 
+        <input type="text" id="input" placeholder="Add a task">
 
+        <ul id="list"></ul>
 
-
+        <hr class="horizontal-line">
+        <br>
+        <details class="completed">
+            <summary>completed <span id="count">0</span></summary>
+        </details>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
