@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
+$default-color: #c0c0c0;
+$text-color: #fff;
+$background-color: #006a4e;
+$box-color: #2e656e;
+
 * {
     margin: 0;
     padding: 0;
@@ -13,13 +18,13 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: skyblue;
+    background-color: $background-color;
 }
 
 .container {
     width: 350px;
     height: 450px;
-    background-color: #fff;
+    background-color: $text-color;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     padding: 1em;
@@ -34,22 +39,22 @@ body {
     outline: none;
     padding: 0 10px;
     margin: 15px 0;
-    color: #fff;
-    background-color: green;
+    color: $text-color;
+    background-color: $background-color;
     border-radius: 10px;
 
-    &::placeholder{
-        color: #fff;
+    &::placeholder {
+        color: $text-color;
     }
 }
 
-.mylist {
-    background-color: red;
+.my-list {
+    background-color: $box-color;
     width: 100%;
     height: auto;
     padding: 15px 10px;
     margin: 10px 0;
-    color: #888;
+    color: $text-color;
     list-style-type: none;
     border-radius: 10px;
     word-wrap: break-word;
@@ -59,9 +64,13 @@ ul li {
     position: relative;
 }
 
+h2 {
+    color: $background-color;
+}
+
 .fa-trash-alt {
     position: absolute;
-    color: grey;
+    color: $default-color;
     cursor: pointer;
     margin: 5px 0;
     right: 15px;
@@ -71,21 +80,20 @@ ul li {
     }
 }
 
-.check-box{
+.check-box {
     cursor: pointer;
     margin-right: 10px;
-    border-radius: 50%;
 }
 
-.horizontal-line{
-    border: 1px dashed grey;
+.horizontal-line {
+    border: 1px dashed $background-color;
 }
 
-#count{
+#count {
     position: absolute;
     right: 25px;
 }
 
-summary{
+summary {
     text-transform: uppercase;
 }

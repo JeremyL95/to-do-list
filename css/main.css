@@ -19,7 +19,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
-  background-color: skyblue;
+  background-color: #006a4e;
 }
 
 .container {
@@ -42,7 +42,7 @@ body {
   padding: 0 10px;
   margin: 15px 0;
   color: #fff;
-  background-color: green;
+  background-color: #006a4e;
   border-radius: 10px;
 }
 
@@ -62,13 +62,13 @@ body {
   color: #fff;
 }
 
-.mylist {
-  background-color: red;
+.my-list {
+  background-color: #2e656e;
   width: 100%;
   height: auto;
   padding: 15px 10px;
   margin: 10px 0;
-  color: #888;
+  color: #fff;
   list-style-type: none;
   border-radius: 10px;
   word-wrap: break-word;
@@ -78,9 +78,13 @@ ul li {
   position: relative;
 }
 
+h2 {
+  color: #006a4e;
+}
+
 .fa-trash-alt {
   position: absolute;
-  color: grey;
+  color: #c0c0c0;
   cursor: pointer;
   margin: 5px 0;
   right: 15px;
@@ -93,11 +97,10 @@ ul li {
 .check-box {
   cursor: pointer;
   margin-right: 10px;
-  border-radius: 50%;
 }
 
 .horizontal-line {
-  border: 1px dashed grey;
+  border: 1px dashed #006a4e;
 }
 
 #count {
